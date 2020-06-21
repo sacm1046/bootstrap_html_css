@@ -1,0 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+.fakenavbar{
+    height: 56px;
+    width: 100%;
+    background-color: red;
+}
