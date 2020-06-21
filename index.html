@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
+                    <div class="card mx-5 mb-4 mb-lg-0 mx-sm-0">
                         <img src="https://picsum.photos/id/117/200/150" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
+                    <div class="card  mx-5 mb-4 mb-lg-0 mx-sm-0">
                         <img src="https://picsum.photos/id/877/200/150" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
+                    <div class="card mx-5 mb-4 mb-lg-0 mx-sm-0">
                         <img src="https://picsum.photos/id/337/200/150" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -137,83 +137,50 @@
 
     <!-- Formulario de Bootstrap -->
     <div class="bg-light py-5" id="contact">
-    <div class="container">
-        <h1 class="text-center display-4">Formulario de Contacto</h1>
-        <div class="row mt-5">
-            
-            <div class="col-md-5 text-right align-self-center">
-                <h1 class="display-2 text-dark">Contáctame</h1>
-                <h2 class="display-5 text-secondary">Ingresa tus datos aquí</h2>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <form>
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
+        <div class="container">
+            <h1 class="text-center display-4">Formulario de Contacto</h1>
+            <div class="row mt-5">
+
+                <div class="col-md-5 text-right align-self-center d-none d-lg-block">
+                    <h1 class="display-3 text-dark">Contáctame</h1>
+                    <h2 class="display-6 text-secondary">Ingresa tus datos aquí</h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-lg-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName3" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputName3">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="form-label">Email</label>
                             <input type="email" class="form-control" id="inputEmail3">
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="inputPassword3">
                         </div>
-                    </div>
-                    <fieldset class="form-group">
-                        <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                        value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        First radio
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                        value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Second radio
-                                    </label>
-                                </div>
-                                <div class="form-check disabled">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                        value="option3" disabled>
-                                    <label class="form-check-label" for="gridRadios3">
-                                        Third disabled radio
-                                    </label>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="inputMessage3" class="form-label">Mensaje</label>
+                            <textarea class="form-control" cols="50" rows="3" id="inputMessage3"></textarea>
                         </div>
-                    </fieldset>
-                    <div class="form-group row">
-                        <div class="col-sm-2">Checkbox</div>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                <label class="form-check-label" for="gridCheck1">
-                                    Example checkbox
-                                </label>
-                            </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-
-
-
-
+    <!-- Script con escuchador de eventos, alert y console.log -->
+    <script>
+        document.getElementById("submit").addEventListener("click", function (e) {
+            e.preventDefault()
+            alert("Bienvenido a Javascript")
+            console.log("Bienvendo a Javascript")
+        });
+    </script>
 
     <!-- Scripts de bootstrap ( jquery - popper - bootstrap ) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
